@@ -13,7 +13,7 @@ const BusinessList = () => {
     <Box bg={bgColor} minH="100vh">
       <Container maxW="container.xl" py={10}>
         <VStack spacing={4} as="header">
-          <Heading as="h1" size="xl">
+          <Heading as="h1" size="xl" color="compassionateBlue">
             Business Categories
           </Heading>
           <Text fontSize="lg" textAlign="center">
@@ -23,12 +23,12 @@ const BusinessList = () => {
 
         {businessCategories.map((category) => (
           <Box key={category.title}>
-            <Heading as="h2" size="lg" mt={10}>
+            <Heading as="h2" size="lg" mt={10} color="inspiringPurple">
               {category.title}
             </Heading>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} py={10}>
               {category.businesses.map((business) => (
-                <Text key={business} p={5} boxShadow="md" borderRadius="lg" bg="white">
+                <Text key={business} p={5} boxShadow="md" borderRadius="lg" bg="white" color="vibrantRed">
                   {business}
                 </Text>
               ))}

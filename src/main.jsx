@@ -11,12 +11,30 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const theme = extendTheme({
+  colors: {
+    brand: {
+      900: "#1a365d",
+      800: "#153e75",
+      700: "#2a69ac",
+    },
+    vibrantRed: "#ff0000",
+    brightYellow: "#ffff00",
+    livelyGreen: "#00ff00",
+    compassionateBlue: "#0000ff",
+    inspiringPurple: "#800080",
+  },
+  fonts: {
+    heading: "Montserrat",
+    body: "Montserrat",
+    mission: "Mont",
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

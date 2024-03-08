@@ -15,11 +15,11 @@ const Index = () => {
           <Heading as="h1" size="xl">
             PhilanthroLink
           </Heading>
-          <Text fontSize="lg" textAlign="center">
+          <Text fontSize="lg" textAlign="center" fontFamily="mission">
             Your curated directory for connecting with socially responsible businesses.
           </Text>
           <Input placeholder="Search for businesses or categories" size="lg" maxWidth="500px" />
-          <Button leftIcon={<FaSearch />} colorScheme="teal" size="lg">
+          <Button leftIcon={<FaSearch />} backgroundColor="vibrantRed" size="lg" _hover={{ bg: "brightYellow" }}>
             Search
           </Button>
         </VStack>
@@ -39,7 +39,7 @@ const businessCard = (title, category, IconComponent) => {
 
   return (
     <VStack bg={cardBg} boxShadow="md" borderRadius="lg" p={5} align="start" spacing={3}>
-      <Badge colorScheme="green" p={1} borderRadius="full">
+      <Badge backgroundColor="livelyGreen" p={1} borderRadius="full" color="white">
         Featured
       </Badge>
       <Heading as="h3" size="md">
@@ -47,7 +47,7 @@ const businessCard = (title, category, IconComponent) => {
       </Heading>
       <Text fontSize="sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dolor massa.</Text>
       <Box>
-        <Icon as={IconComponent} w={5} h={5} color="green.500" />
+        <Icon as={IconComponent} w={5} h={5} color="livelyGreen" />
         <Text as="span" ml={2} fontSize="sm" fontWeight="bold">
           {category}
         </Text>
