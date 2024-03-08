@@ -1,4 +1,5 @@
 import { Box, Container, Heading, SimpleGrid, Text, VStack, Input, Button, Image, useColorModeValue, Badge, Icon } from "@chakra-ui/react";
+import Navigation from "../components/Navigation";
 import { FaSearch, FaHeart, FaLeaf, FaHandshake } from "react-icons/fa";
 
 const Index = () => {
@@ -7,6 +8,7 @@ const Index = () => {
 
   return (
     <Box bg={bgColor} minH="100vh">
+      <Navigation />
       <Container maxW="container.xl" py={10}>
         <VStack spacing={4} as="header">
           <Image src="https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGVhcnRofGVufDB8fHx8MTcwOTg2ODYwMHww&ixlib=rb-4.0.3&q=80&w=1080" borderRadius="full" boxSize="100px" alt="Sustainable Earth" />
